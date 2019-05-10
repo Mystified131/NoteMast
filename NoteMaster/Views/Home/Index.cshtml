@@ -1,0 +1,25 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>Add Note</h2>
+
+<form action='Home/Result' method='POST' align="left">
+    <div>
+
+        <label>
+            Please enter a "to do" note:
+        </label><br><br> <textarea name="thenote" rows="4" cols="50"></textarea>
+        <br /><br />
+
+        <label>
+            Please enter numerical rating of importance for the note (Integers from 1-5, please):
+        </label><br><br>
+        <input name="rating" type="text" value="" />
+        <br /><br />
+
+        <input type="submit" value="Submit Note" />
+
+    </div>
+
+</form>

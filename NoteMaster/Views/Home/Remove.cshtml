@@ -1,0 +1,23 @@
+﻿
+@{
+    ViewData["Title"] = "Remove";
+}
+
+<h2>Remove A Note</h2>
+
+
+<div>
+    <form action='Remove' method='POST' align="left">
+        <label>
+            Which note would you like to delete?
+        </label><br><br />
+        <select name="NewElement1">
+            @foreach (var item in Model.TheList)
+            {
+                <option value=@item.ID>@item.Thenote</option>}
+        </select>
+
+        <br /><br />
+        <input type="submit" value="Remove Item" />
+    </form>
+</div>
