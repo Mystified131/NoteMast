@@ -11,6 +11,9 @@ namespace NoteMaster.ViewModels
         [Required]
         public string thenote { get; set; }
         [Required]
+        public string thedate { get; set; }
+        [Required]
         public int rating { get; set; }
+        
     }
 }

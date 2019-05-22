@@ -63,7 +63,7 @@ namespace NoteMaster.Controllers
 
                 List<Note> TheList = context.Notes.ToList();
 
-                Note Note = new Note(resultViewModel.Thenote, resultViewModel.Rating);
+                Note Note = new Note(resultViewModel.Thenote, resultViewModel.Thedate, resultViewModel.Rating);
 
                 context.Notes.Add(Note);
                 TheList.Add(Note);

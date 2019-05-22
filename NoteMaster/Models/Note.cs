@@ -10,12 +10,14 @@ namespace NoteMaster.Models
 
         public int ID { get; set; }
         public string Thenote { get; set; }
+        public string Thedate { get; set; }
         public int Rating { get; set; }
 
 
-        public Note(string thenote, int rating)
+        public Note(string thenote, string thedate, int rating)
         {
             Thenote = thenote;
+            Thedate = thedate;
             Rating = rating;
         }
     }
